@@ -1,0 +1,12 @@
+@import "./main.css";
+@import "./pages.css";
+
+
+
+/* MOBILE */
+@media screen and (max-width:800px) {
+
+    .page3 .page-content-container {
+        flex-direction: column;
+    }
+}

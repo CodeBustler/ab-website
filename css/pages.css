@@ -1,0 +1,110 @@
+@import "./main.css";
+
+/* ALL PAGE STYLING */
+.pages {
+    z-index: -1;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* TITLE */
+.title {
+    width: 90%;
+    font-size: xx-large;
+    font-weight: 700;
+    padding: 20px 0;
+    margin: 60px auto auto auto;
+}
+
+/* Paragraph */
+.para {
+    color: grey;
+    margin: 15px 0;
+    line-height: 150%;
+}
+
+.subtitle {
+    font-size: larger;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.subtitle span {
+    margin-left: 1px;
+    margin-top: -8px;
+}
+
+i {
+    color: #fff;
+}
+
+/* CONTENT CONTAINER  */
+.pages .page-content-container {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    gap: 10px;
+}
+
+/* CONTAINER | PAGE_CONTENT */
+.pages .page-content-container .page-content {
+    width: 50%;
+    padding: 10px;
+}
+
+/* CONTAINER | CONTENT_IMAGE */
+.pages .page-content-container .page-image {
+    width: 50%;
+    padding: 10px;
+}
+
+/* CONTENT_IMAGE */
+.pages .page-content-container .page-image img {
+    width: 100%;
+}
+
+/* RESPONSIVE FOR (MOBILE) */
+
+@media screen and (max-width: 800px) {
+    /* CONTENT CONTAINER  */
+    /* .pages .page-content-container {
+        flex-direction: column-reverse;
+    } */
+
+    /* PAGE_CONTENT */
+    .pages .page-content-container .page-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* CONTAINER | CONTENT_IMAGE */
+    .pages .page-content-container .page-image {
+        width: 90%;
+        margin: auto;
+        padding: 0px;
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: larger;
+        font-weight: 600;
+    }
+
+    .subtitle span {
+        margin-left: 1px;
+        margin-top: -8px;
+    }
+
+    .para {
+        color: grey;
+        margin: 20px 0;
+        line-height: 150%;
+    }
+}

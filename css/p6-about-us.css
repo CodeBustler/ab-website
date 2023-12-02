@@ -1,0 +1,142 @@
+@import "./main.css";
+@import "./pages.css";
+
+.page-image i {
+    color: var(--color-red);
+}
+
+/* PROFILES */
+
+.profile-img img {
+    width: 180px;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+}
+
+.page6 .page-content .profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-shantanu,
+.profile-vikas {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 25px;
+    border: 1px lightgrey solid;
+    border-radius: 10px;
+}
+
+
+.profile-detail div {
+    padding: 4px 0px;
+}
+
+.profile-detail .profile-name {
+    font-size: x-large;
+    font-weight: 500;
+    color: var(--color-black)
+}
+
+
+.profile-detail .profile-designation {
+    color: grey;
+}
+
+.profile-detail .profile-email a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+.profile-detail .profile-email {
+    /* width: ; */
+    display: inline-block;
+    background-color: var(--color-red);
+    margin: 8px 0;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+
+.profile-detail .profile-email:hover {
+    transition: 0.5s;
+    background-color: var(--color-black);
+}
+
+
+.profiles {
+    padding: 20px 0;
+    width: 90%;
+    margin-top: -10px;
+}
+
+/* PROFILE STYLE END */
+
+.page6 .page-content-container .page-image {
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.page6 .page-content-container .page-image {
+    width: 100%;
+}
+
+
+/* MOBILE */
+@media screen and (max-width:800px) {
+
+    .page6 .page-content-container {
+        flex-direction: column-reverse;
+    }
+
+    .profiles {
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .profile-img img {
+        width: 130px;
+        border-radius: 50%;
+        border: 2px solid lightgrey;
+    }
+
+    .page6 .page-image {
+        width: 102%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .page6 .page-image img {
+        display: none;
+    }
+
+    .page6 .page-content-container .page-image {
+        /* align-items: center; */
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (max-width:485px) {
+    .profile-img img {
+        width: 110px;
+    }
+
+    .profile-detail .profile-name {
+        font-size: large;
+        font-weight: 500;
+        color: var(--color-black)
+    }
+
+
+    .profile-detail .profile-designation {
+        color: grey;
+    }
+
+
+}

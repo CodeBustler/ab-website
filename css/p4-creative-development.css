@@ -1,0 +1,15 @@
+@import "./main.css";
+@import "./pages.css";
+
+
+.page4 ul li {
+    padding: 7px 0;
+}
+
+/* MOBILE */
+@media screen and (max-width:800px) {
+
+    .page4 .page-content-container {
+        flex-direction: column-reverse;
+    }
+}

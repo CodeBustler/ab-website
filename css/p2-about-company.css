@@ -1,0 +1,39 @@
+@import "./main.css";
+@import "./pages.css";
+/* @import "./p1-home-page.css"; */
+
+
+/* CONTAINER | PAGE_CONTENT */
+.page2 .page-content-container .page-content {
+    width: 80% !important;
+}
+
+/* IMAGE(BUILDING) */
+.page2 {
+    position: relative;
+}
+
+.page2 img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35% !important;
+    z-index: -2;
+}
+
+/* MOBILE */
+@media screen and (max-width:800px) {
+    .page2 ul li {
+        padding: 0 0;
+    }
+
+    .page2 .page-content-container .page-image {
+        display: none;
+    }
+
+    .page2 .page-content-container .page-content {
+        width: 100% !important;
+    }
+
+
+}

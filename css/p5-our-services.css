@@ -1,0 +1,116 @@
+@import "./main.css";
+@import "./pages.css";
+
+.page5 ul li {
+  list-style-type: none;
+  padding: 7px 0;
+  line-height: 160%;
+}
+
+.numbers {
+  background-color: var(--color-red);
+  display: inline-block;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: large;
+  font-weight: 500;
+  text-shadow: 1px 1px 5px grey;
+}
+
+.service-name {
+  /* font-size: 18px; */
+  font-weight: 500;
+  color: #fff;
+}
+
+.services-box {
+  /* background-color: aqua; */
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.services-box .box-row1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.services-box .box-row2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.services-box .box-row3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.services-box .boxes {
+  width: 250px;
+  margin: auto;
+  padding: 10px 20px;
+  background-color: rgb(61, 61, 61);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.services-box .boxes:hover {
+  transition: 0.4s;
+  background-color: rgb(7, 7, 7);
+}
+
+.page5 .page-content-container {
+  align-items: center;
+}
+
+/* MOBILE */
+@media screen and (max-width: 800px) {
+  .page5 .page-content-container {
+    flex-direction: column;
+  }
+
+  .services-box .box-row1,
+  .services-box .box-row2,
+  .services-box .box-row3 {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .services-box {
+    /* background-color: aqua; */
+    padding: 30px 0;
+
+    gap: 30px;
+  }
+
+  .services-box .boxes {
+    width: 90%;
+  }
+}
